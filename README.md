@@ -35,5 +35,4 @@ Execute o programa:
 java Main
 ```
 A aplicação será iniciada, e você poderá utilizar as funcionalidades disponíveis através da interface gráfica.
-Considerações Finais
-Nossa aplicação de banco em Java foi desenvolvida como um projeto acadêmico, com o objetivo de facilitar a gestão de dados e operações bancárias de forma simples e intuitiva. Lembre-se de seguir as observações importantes para o correto funcionamento da aplicação e garantir que todas as funcionalidades estejam disponíveis.
+
