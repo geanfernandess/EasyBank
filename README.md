@@ -1,4 +1,4 @@
-# sistema-bancario
+# EasyBank
 
 O projeto presente no repositório é uma aplicação desenvolvida em Java como parte de uma disciplina acadêmica. O objetivo do projeto é fornecer uma interface intuitiva para realizar operações bancárias e gerenciar dados relacionados a funcionários, agências, clientes e contas bancárias.
 
