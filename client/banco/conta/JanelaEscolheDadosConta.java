@@ -1,10 +1,14 @@
 package client.banco.conta;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import client.AbrirJanela;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -42,65 +46,65 @@ public class JanelaEscolheDadosConta extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JButton btn_cadastrar = new JButton("CADASTRAR CONTA - CORRENTE");
 		btn_cadastrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaCadastrarContaCorrente.main(null);
+				AbrirJanela.abrirJanela(JanelaCadastrarContaCorrente.class);
 			}
 		});
 		btn_cadastrar.setBounds(66, 66, 321, 23);
 		contentPane.add(btn_cadastrar);
-		
+
 		JButton btn_cadastrar_1 = new JButton("CADASTRAR CONTA - POUPANCA");
 		btn_cadastrar_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaCadastrarContaPoupanca.main(null);
+				AbrirJanela.abrirJanela(JanelaCadastrarContaPoupanca.class);
 			}
 		});
 		btn_cadastrar_1.setBounds(66, 100, 321, 23);
 		contentPane.add(btn_cadastrar_1);
-		
+
 		JButton btn_cadastrar_1_1 = new JButton("CADASTRAR CONTA - SALARIO");
 		btn_cadastrar_1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaCadastrarContaSalario.main(null);
+				AbrirJanela.abrirJanela(JanelaCadastrarContaSalario.class);
 			}
 		});
 		btn_cadastrar_1_1.setBounds(66, 134, 321, 23);
 		contentPane.add(btn_cadastrar_1_1);
-		
+
 		JButton btn_alterarStatus = new JButton("ALTERAR STATUS DA CONTA");
 		btn_alterarStatus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaAlterarStatusConta.main(null);
+				AbrirJanela.abrirJanela(JanelaAlterarStatusConta.class);
 			}
 		});
 		btn_alterarStatus.setBounds(66, 168, 321, 23);
 		contentPane.add(btn_alterarStatus);
-		
+
 		JLabel lbl_titulo = new JLabel("DADOS CONTAS");
 		lbl_titulo.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lbl_titulo.setBounds(176, 11, 116, 14);
 		contentPane.add(lbl_titulo);
-		
+
 		JButton btn_calculaTarifa = new JButton("ENCONTRAR TARIFAS DAS CONTAS");
 		btn_calculaTarifa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaBuscarTarifasContas.main(null);
+				AbrirJanela.abrirJanela(JanelaBuscarTarifasContas.class);
 			}
 		});
 		btn_calculaTarifa.setBounds(66, 202, 321, 23);
 		contentPane.add(btn_calculaTarifa);
-		
+
 		JButton btn_buscar_1_1 = new JButton("BUSCAR CONTA");
 		btn_buscar_1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaBuscarConta.main(null);
+				AbrirJanela.abrirJanela(JanelaBuscarConta.class);
 			}
 		});
 		btn_buscar_1_1.setBounds(66, 236, 321, 23);
 		contentPane.add(btn_buscar_1_1);
-				
+
 	}
 }

@@ -1,10 +1,14 @@
 package client.banco.conta;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import client.AbrirJanela;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -28,6 +32,7 @@ public class JanelaEscolheTransacao extends JFrame {
 			}
 		});
 	}
+
 	/**
 	 * Create the frame.
 	 */
@@ -38,38 +43,38 @@ public class JanelaEscolheTransacao extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JButton btn_realizarSaque = new JButton("REALIZAR SAQUE");
 		btn_realizarSaque.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaRealizarSaque.main(null);
+				AbrirJanela.abrirJanela(JanelaRealizarSaque.class);
 			}
 		});
 		btn_realizarSaque.setBounds(66, 66, 321, 23);
 		contentPane.add(btn_realizarSaque);
-		
-		JButton btn_realizarTrasferencia = new JButton("REALIZAR TRANFERENCIA");
+
+		JButton btn_realizarTrasferencia = new JButton("REALIZAR TRANSFERENCIA");
 		btn_realizarTrasferencia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaRealizarTranferencia.main(null);
+				AbrirJanela.abrirJanela(JanelaRealizarTranferencia.class);
 			}
 		});
 		btn_realizarTrasferencia.setBounds(66, 100, 321, 23);
 		contentPane.add(btn_realizarTrasferencia);
-		
+
 		JButton btn_realizarDeposito = new JButton("REALIZAR DEPOSITO");
 		btn_realizarDeposito.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JanelaRealizarDeposito.main(null);
+				AbrirJanela.abrirJanela(JanelaRealizarDeposito.class);
 			}
 		});
 		btn_realizarDeposito.setBounds(66, 134, 321, 23);
 		contentPane.add(btn_realizarDeposito);
-		
+
 		JLabel lbl_titulo = new JLabel("ESCOLHE TRANSACAO");
 		lbl_titulo.setFont(new Font("Tahoma", Font.BOLD, 11));
 		lbl_titulo.setBounds(166, 11, 143, 14);
 		contentPane.add(lbl_titulo);
-				
+
 	}
 }
