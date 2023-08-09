@@ -15,7 +15,7 @@ Execute o programa:
 ```
 java Main
 ```
-Para cadastrar uma agência, é necessário vincular um gerente já cadastrado na aplicação.
-Para cadastrar um cliente, é necessário vincular uma agência já cadastrada na aplicação.
-Para cadastrar uma conta, é necessário vincular uma agência e um cliente já cadastrados na aplicação.
+- Para cadastrar uma agência, é necessário vincular um gerente já cadastrado na aplicação.
+- Para cadastrar um cliente, é necessário vincular uma agência já cadastrada na aplicação.
+- Para cadastrar uma conta, é necessário vincular uma agência e um cliente já cadastrados na aplicação.
 
