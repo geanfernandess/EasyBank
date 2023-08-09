@@ -7,7 +7,7 @@ Siga os passos abaixo para compilar e executar a aplicação:
 
 Clone este repositório para a sua máquina ou faça o download do código-fonte.
 Abra o terminal ou prompt de comando e navegue até o diretório onde o projeto foi clonado/baixado.
-Compile o código-fonte:
+Compile o código-fonte: 
 ```
 javac -encoding ISO-8859-1 Main.java
 ```
